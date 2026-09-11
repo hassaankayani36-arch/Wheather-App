@@ -1,15 +1,19 @@
 
 import './App.css';
+import Inputs from './components/Inputs';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
+      Weather App
+      <Inputs />
+    </div>
+  )
 
 
 
-
-    </div >
-  );
 }
+
 
 export default App;
