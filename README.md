@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Vercel Deployment
+
+Import the GitHub repository into Vercel and keep the detected Create React App build settings (`npm run build` with `build` as the output directory). In the Vercel project settings, add `OPENWEATHER_API_KEY` as an environment variable for the environments you deploy, then redeploy.
+
+The weather API key is used only by the server-side function in `api/weather.js`; do not add it to React code or commit it. For local API testing, put the key in the ignored `.env.local` file and run `npx vercel dev`.
+
 ## Available Scripts
 
 In the project directory, you can run:
